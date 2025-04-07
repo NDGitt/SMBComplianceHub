@@ -1,6 +1,11 @@
 import { useState, useEffect } from "react";
 import { useQuery } from "@tanstack/react-query";
-import { fetchProvidersWithDetails, fetchRequirementCategories } from "@/lib/data";
+import { 
+  fetchProvidersWithDetails, 
+  fetchRequirementCategories, 
+  ProviderWithCategory
+} from "@/lib/data";
+import type { RequirementCategory, ServiceProvider } from "@shared/schema";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
@@ -19,14 +24,14 @@ const Providers = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedCategories, setSelectedCategories] = useState<number[]>([]);
   const [selectedRating, setSelectedRating] = useState<string>("");
-  const [selectedLocation, setSelectedLocation] = useState<string>("");
+  const [selectedLocation, setSelectedLocation] = useState<string>("all");
   
   // Fetch all providers with category details
   const {
     data: providers,
     isLoading: isLoadingProviders,
     error: providersError,
-  } = useQuery({
+  } = useQuery<ProviderWithCategory[]>({
     queryKey: ["/api/providers-with-details"],
   });
   
@@ -34,7 +39,7 @@ const Providers = () => {
   const {
     data: categories,
     isLoading: isLoadingCategories,
-  } = useQuery({
+  } = useQuery<RequirementCategory[]>({
     queryKey: ["/api/requirement-categories"],
   });
   
@@ -46,8 +51,9 @@ const Providers = () => {
   }, [categories]);
   
   // Get unique locations for filtering
-  const locations = providers 
-    ? Array.from(new Set(providers.map(p => p.locationText)))
+  const locations: string[] = providers 
+    ? Array.from(new Set(providers.map(p => p.locationText || "")))
+        .filter(location => location !== "") 
     : [];
   
   // Filter providers based on search term, categories, rating, and location
@@ -63,7 +69,7 @@ const Providers = () => {
       (selectedRating === "4+" && provider.rating >= 4) ||
       (selectedRating === "3+" && provider.rating >= 3);
     
-    const matchesLocation = selectedLocation === "" || 
+    const matchesLocation = selectedLocation === "all" || 
       provider.locationText === selectedLocation;
     
     return matchesSearch && matchesCategory && matchesRating && matchesLocation;
@@ -81,7 +87,7 @@ const Providers = () => {
     setSearchTerm("");
     setSelectedCategories(categories?.map(cat => cat.id) || []);
     setSelectedRating("");
-    setSelectedLocation("");
+    setSelectedLocation("all");
   };
   
   return (
@@ -178,12 +184,15 @@ const Providers = () => {
               
               <div className="mb-4">
                 <h4 className="font-medium text-gray-700 mb-2">Location</h4>
-                <Select value={selectedLocation} onValueChange={setSelectedLocation}>
+                <Select 
+                  value={selectedLocation} 
+                  onValueChange={setSelectedLocation}
+                >
                   <SelectTrigger>
                     <SelectValue placeholder="Any Location" />
                   </SelectTrigger>
                   <SelectContent>
-                    <SelectItem value="">Any Location</SelectItem>
+                    <SelectItem value="all">Any Location</SelectItem>
                     {locations.map(location => (
                       <SelectItem key={location} value={location}>{location}</SelectItem>
                     ))}
