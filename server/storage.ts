@@ -310,104 +310,176 @@ export class MemStorage implements IStorage {
     
     // Service Providers for Berkeley
     const providers: InsertServiceProvider[] = [
-      // City requirement providers
+      // Food Safety Compliance providers
       {
-        name: "Berkeley Business License Assistance",
-        description: "Streamlined assistance for obtaining Berkeley business licenses with guidance on local regulations.",
-        categoryId: cityCatId,
-        locationText: "Berkeley, CA",
-        rating: 5,
+        name: "City of Berkeley Environmental Health Division",
+        description: "Provides health permits, food safety inspections, and training to ensure compliance with the California Retail Food Code.",
+        categoryId: healthSafetyCatId,
+        locationText: "1947 Center St, Berkeley, CA 94704",
+        rating: 4.8,
         reviewCount: 142,
-        price: "$150-300",
-        certification: "City-Recognized Business Consultant"
+        price: "Varied permit fees",
+        certification: "Government Agency"
       },
       {
-        name: "Berkeley Zoning Experts",
-        description: "Specialized consulting on Berkeley zoning compliance and permit application assistance.",
-        categoryId: cityCatId,
-        locationText: "Berkeley, CA",
-        rating: 4.8,
-        reviewCount: 87,
-        price: "$200-500",
-        certification: "Certified Urban Planning Consultants"
+        name: "Berkeley Adult School – Culinary Program",
+        description: "Offers ServSafe certification and culinary programs to train staff in food safety best practices.",
+        categoryId: healthSafetyCatId,
+        locationText: "1701 San Pablo Ave, Berkeley, CA 94702",
+        rating: 4.7,
+        reviewCount: 68,
+        price: "$90-250",
+        certification: "ServSafe Certification Provider"
       },
-      
-      // Health & Safety providers
       {
-        name: "Safe Food Berkeley",
-        description: "Comprehensive food safety training and health permit application assistance for Berkeley restaurants.",
+        name: "Safe Foods First, LLC",
+        description: "Provides on-site food safety consulting, HACCP plan development, and pre-inspection audits.",
         categoryId: healthSafetyCatId,
         locationText: "Berkeley, CA",
         rating: 4.9,
-        reviewCount: 112,
-        price: "$95-250",
-        certification: "Berkeley Health Department Approved"
-      },
-      {
-        name: "Bay Area Health Compliance",
-        description: "Pre-inspection consultations and compliance guidance for food establishments.",
-        categoryId: healthSafetyCatId,
-        locationText: "Berkeley, CA",
-        rating: 4.7,
-        reviewCount: 78,
-        price: "$175-350",
-        certification: "Former Health Inspectors on Staff"
+        reviewCount: 37,
+        price: "$150-400",
+        certification: "Certified Food Safety Professionals"
       },
       
-      // Fire Safety providers
+      // Fire Safety Compliance providers
       {
-        name: "Berkeley Fire Safety Consultants",
-        description: "Expert guidance on passing Berkeley Fire Department inspections with pre-inspection assessments.",
+        name: "Berkeley Fire Department – Fire Prevention Bureau",
+        description: "Conducts fire code inspections, fire safety plan reviews, and operational permitting.",
         categoryId: fireSafetyCatId,
-        locationText: "Berkeley, CA",
-        rating: 4.8,
-        reviewCount: 63,
-        price: "$200-400",
-        certification: "Former Berkeley Fire Department Personnel"
-      },
-      {
-        name: "East Bay Fire Protection Services",
-        description: "Complete fire safety equipment installation, maintenance, and certification services.",
-        categoryId: fireSafetyCatId,
-        locationText: "Berkeley, CA",
-        rating: 4.9,
-        reviewCount: 129,
-        price: "$150-600",
-        certification: "State Licensed Fire Safety Specialists"
-      },
-      
-      // State requirement providers
-      {
-        name: "California Licensing Experts",
-        description: "Assistance with all California state licensing requirements including ABC, Board of Cosmetology, and childcare licensing.",
-        categoryId: stateCatId,
-        locationText: "Berkeley, CA",
-        rating: 4.8,
-        reviewCount: 156,
-        price: "$250-800",
-        certification: "Licensed Business Consultants"
-      },
-      {
-        name: "ServSafe California",
-        description: "Official food handler certification and food safety manager training programs.",
-        categoryId: stateCatId,
-        locationText: "Online & Berkeley, CA",
-        rating: 4.7,
-        reviewCount: 203,
-        price: "$89-179",
-        certification: "Nationally Recognized Certification"
-      },
-      
-      // Employment compliance providers  
-      {
-        name: "Berkeley Labor Compliance Services",
-        description: "Ensure compliance with Berkeley's minimum wage, paid sick leave, and other local labor ordinances.",
-        categoryId: employmentCatId,
-        locationText: "Berkeley, CA",
+        locationText: "2100 Martin Luther King Jr. Way, Berkeley, CA 94704",
         rating: 4.6,
-        reviewCount: 47,
-        price: "$125-300",
-        certification: "Certified Labor Specialists"
+        reviewCount: 93,
+        price: "Varied inspection fees",
+        certification: "Government Agency"
+      },
+      {
+        name: "Berkeley Fire Protection & Hood Cleaning",
+        description: "Provides kitchen hood suppression, fire extinguisher servicing, and fire compliance support.",
+        categoryId: fireSafetyCatId,
+        locationText: "1706 Hearst Ave, Berkeley, CA 94703",
+        rating: 4.8,
+        reviewCount: 112,
+        price: "$200-600",
+        certification: "Licensed Fire Safety Equipment Providers"
+      },
+      {
+        name: "Best Equipment Company",
+        description: "Sells and services portable fire extinguishers; provides annual maintenance and training.",
+        categoryId: fireSafetyCatId,
+        locationText: "3101 San Pablo Ave, Berkeley, CA 94702",
+        rating: 4.7,
+        reviewCount: 65,
+        price: "$75-300",
+        certification: "Certified Fire Equipment Technicians"
+      },
+      
+      // Zoning & Permit Compliance providers
+      {
+        name: "City of Berkeley Permit Service Center",
+        description: "Provides support for zoning approvals, building permits, and sign permits to ensure businesses meet city compliance.",
+        categoryId: cityCatId,
+        locationText: "1947 Center St, 3rd Floor, Berkeley, CA 94704",
+        rating: 4.5,
+        reviewCount: 186,
+        price: "Varied permit fees",
+        certification: "Government Agency"
+      },
+      {
+        name: "City of Berkeley Office of Economic Development",
+        description: "Advises businesses on local licensing, zoning, and planning regulations; acts as liaison with city departments.",
+        categoryId: cityCatId,
+        locationText: "2180 Milvia St, 5th Floor, Berkeley, CA 94704",
+        rating: 4.7,
+        reviewCount: 124,
+        price: "Free consulting",
+        certification: "Government Agency"
+      },
+      {
+        name: "Rhoades Planning Group",
+        description: "Consults on zoning, permitting, and land use compliance; helps businesses secure use permits and navigate approval processes.",
+        categoryId: cityCatId,
+        locationText: "2140 Shattuck Ave, Suite 705, Berkeley, CA 94704",
+        rating: 4.9,
+        reviewCount: 42,
+        price: "$300-800",
+        certification: "Urban Planning Consultants"
+      },
+      
+      // Payroll & Labor Compliance providers
+      {
+        name: "Visionova HR Consulting, Inc.",
+        description: "Offers HR audits, compliance training, employee handbook development, and payroll process guidance.",
+        categoryId: employmentCatId,
+        locationText: "2001 Addison St, Suite 300, Berkeley, CA 94704",
+        rating: 4.8,
+        reviewCount: 56,
+        price: "$200-600",
+        certification: "Certified HR Professionals"
+      },
+      {
+        name: "Mary Pavellas Bookkeeping",
+        description: "Provides full-service payroll, employee classification advice, and tax filing for small businesses.",
+        categoryId: employmentCatId,
+        locationText: "P.O. Box 2020, Berkeley, CA 94702",
+        rating: 4.9,
+        reviewCount: 38,
+        price: "$150-350",
+        certification: "Certified Bookkeepers"
+      },
+      
+      // Insurance Compliance providers
+      {
+        name: "Fidelity Insurance Service, Inc.",
+        description: "Independent broker offering general liability, workers' comp, property insurance, and compliance support.",
+        categoryId: stateCatId,
+        locationText: "801 Allston Way, Berkeley, CA 94710",
+        rating: 4.7,
+        reviewCount: 92,
+        price: "Varied policy rates",
+        certification: "Licensed Insurance Brokers"
+      },
+      {
+        name: "Cynthia Blumgart – State Farm Insurance Agency",
+        description: "Offers small business insurance including liability, property, workers' comp, and business interruption.",
+        categoryId: stateCatId,
+        locationText: "1950 Addison St, Suite 105, Berkeley, CA 94704",
+        rating: 4.8,
+        reviewCount: 104,
+        price: "Varied policy rates",
+        certification: "Licensed Insurance Agency"
+      },
+      
+      // Workplace Safety (OSHA) Compliance providers
+      {
+        name: "Labor Occupational Health Program (LOHP)",
+        description: "Provides free training, resources, and tools to help small businesses improve health and safety practices.",
+        categoryId: federalCatId,
+        locationText: "1608 Fourth St, Suite 220, Berkeley, CA 94710",
+        rating: 4.9,
+        reviewCount: 76,
+        price: "Free/subsidized programs",
+        certification: "UC Berkeley-Affiliated Program"
+      },
+      {
+        name: "ROI Safety Services",
+        description: "Provides on-site OSHA safety training, IIPP development, and compliance audits.",
+        categoryId: federalCatId,
+        locationText: "Berkeley, CA (mobile)",
+        rating: 4.8,
+        reviewCount: 48,
+        price: "$300-750",
+        certification: "OSHA Certified Safety Professionals"
+      },
+      {
+        name: "Cal/OSHA Consultation Service",
+        description: "Free and confidential Cal/OSHA assistance to help small businesses identify hazards and comply with safety laws.",
+        categoryId: federalCatId,
+        locationText: "1515 Clay St, Suite 1103, Oakland, CA 94612",
+        rating: 4.6,
+        reviewCount: 92,
+        price: "Free services",
+        certification: "Government Agency"
       }
     ];
     

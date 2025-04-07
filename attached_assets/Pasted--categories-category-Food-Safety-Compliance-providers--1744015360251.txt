@@ -1,0 +1,84 @@
+{
+  "categories": [
+    {
+      "category": "Food Safety Compliance",
+      "providers": [
+        {
+          "name": "City of Berkeley Environmental Health Division",
+          "address": "1947 Center St, Berkeley, CA 94704",
+          "website": "https://berkeleyca.gov/doing-business/operating-berkeley/food-service",
+          "contact": "(510) 981-5310",
+          "description": "Provides health permits, food safety inspections, and training to ensure compliance with the California Retail Food Code."
+        },
+        {
+          "name": "Berkeley Adult School – Culinary Program",
+          "address": "1701 San Pablo Ave, Berkeley, CA 94702",
+          "website": "https://bas.berkeley.net",
+          "contact": "(510) 644-6130",
+          "description": "Offers ServSafe certification and culinary programs to train staff in food safety best practices."
+        },
+        {
+          "name": "Safe Foods First, LLC",
+          "address": "Berkeley, CA",
+          "website": "N/A",
+          "contact": "Email protected",
+          "description": "Provides on-site food safety consulting, HACCP plan development, and pre-inspection audits."
+        },
+        {
+          "name": "Kitchen on Fire",
+          "address": "1509 Shattuck Ave, Berkeley, CA 94709",
+          "website": "https://kitchenonfire.com",
+          "contact": "(510) 548-2665",
+          "description": "Culinary school offering hands-on training in food safety fundamentals and hygiene practices."
+        },
+        {
+          "name": "Rest Ops Solutions",
+          "address": "Mobile service in Berkeley",
+          "website": "N/A",
+          "contact": "(888) 695-9926",
+          "description": "Provides on-site ServSafe Manager certification and flexible training for food safety compliance."
+        }
+      ]
+    },
+    {
+      "category": "Fire Safety Compliance",
+      "providers": [
+        {
+          "name": "Berkeley Fire Department – Fire Prevention Bureau",
+          "address": "2100 Martin Luther King Jr. Way, Berkeley, CA 94704",
+          "website": "https://berkeleyca.gov/safety-health/fire-department/fire-prevention",
+          "contact": "(510) 981-3473",
+          "description": "Conducts fire code inspections, fire safety plan reviews, and operational permitting."
+        },
+        {
+          "name": "Berkeley Fire Protection & Hood Cleaning",
+          "address": "1706 Hearst Ave, Berkeley, CA 94703",
+          "website": "https://fireprotectionberkeley.com",
+          "contact": "(510) 405-1313",
+          "description": "Provides kitchen hood suppression, fire extinguisher servicing, and fire compliance support."
+        },
+        {
+          "name": "Best Equipment Company",
+          "address": "3101 San Pablo Ave, Berkeley, CA 94702",
+          "website": "N/A",
+          "contact": "(510) 655-8882",
+          "description": "Sells and services portable fire extinguishers; provides annual maintenance and training."
+        },
+        {
+          "name": "FireShield",
+          "address": "Mobile service in Berkeley",
+          "website": "https://calfireshield.com",
+          "contact": "(408) 457-4282",
+          "description": "Performs on-site fire extinguisher training, certification, and safety system inspection."
+        },
+        {
+          "name": "AAA Fire Protection Services",
+          "address": "Berkeley service area",
+          "website": "https://aaafireprotection.com",
+          "contact": "(800) 543-5556",
+          "description": "Specializes in UL300 kitchen suppression, hood cleaning, and fire system maintenance."
+        }
+      ]
+    }
+  ]
+}

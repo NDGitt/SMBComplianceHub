@@ -1,0 +1,324 @@
+{
+  "categories": [
+    {
+      "category": "Food Safety Compliance",
+      "providers": [
+        {
+          "name": "City of Berkeley Environmental Health Division",
+          "address": "1947 Center St, Berkeley, CA 94704",
+          "website": "https://berkeleyca.gov/doing-business/operating-berkeley/food-service",
+          "contact": "(510) 981-5310",
+          "description": "Provides health permits, food safety inspections, and training to ensure compliance with the California Retail Food Code."
+        },
+        {
+          "name": "Berkeley Adult School \u2013 Culinary Program",
+          "address": "1701 San Pablo Ave, Berkeley, CA 94702",
+          "website": "https://bas.berkeley.net",
+          "contact": "(510) 644-6130",
+          "description": "Offers ServSafe certification and culinary programs to train staff in food safety best practices."
+        },
+        {
+          "name": "Safe Foods First, LLC",
+          "address": "Berkeley, CA",
+          "website": "N/A",
+          "contact": "Email protected",
+          "description": "Provides on-site food safety consulting, HACCP plan development, and pre-inspection audits."
+        },
+        {
+          "name": "Kitchen on Fire",
+          "address": "1509 Shattuck Ave, Berkeley, CA 94709",
+          "website": "https://kitchenonfire.com",
+          "contact": "(510) 548-2665",
+          "description": "Culinary school offering hands-on training in food safety fundamentals and hygiene practices."
+        },
+        {
+          "name": "Rest Ops Solutions",
+          "address": "Mobile service in Berkeley",
+          "website": "N/A",
+          "contact": "(888) 695-9926",
+          "description": "Provides on-site ServSafe Manager certification and flexible training for food safety compliance."
+        }
+      ]
+    },
+    {
+      "category": "Fire Safety Compliance",
+      "providers": [
+        {
+          "name": "Berkeley Fire Department \u2013 Fire Prevention Bureau",
+          "address": "2100 Martin Luther King Jr. Way, Berkeley, CA 94704",
+          "website": "https://berkeleyca.gov/safety-health/fire-department/fire-prevention",
+          "contact": "(510) 981-3473",
+          "description": "Conducts fire code inspections, fire safety plan reviews, and operational permitting."
+        },
+        {
+          "name": "Berkeley Fire Protection & Hood Cleaning",
+          "address": "1706 Hearst Ave, Berkeley, CA 94703",
+          "website": "https://fireprotectionberkeley.com",
+          "contact": "(510) 405-1313",
+          "description": "Provides kitchen hood suppression, fire extinguisher servicing, and fire compliance support."
+        },
+        {
+          "name": "Best Equipment Company",
+          "address": "3101 San Pablo Ave, Berkeley, CA 94702",
+          "website": "N/A",
+          "contact": "(510) 655-8882",
+          "description": "Sells and services portable fire extinguishers; provides annual maintenance and training."
+        },
+        {
+          "name": "FireShield",
+          "address": "Mobile service in Berkeley",
+          "website": "https://calfireshield.com",
+          "contact": "(408) 457-4282",
+          "description": "Performs on-site fire extinguisher training, certification, and safety system inspection."
+        },
+        {
+          "name": "AAA Fire Protection Services",
+          "address": "Berkeley service area",
+          "website": "https://aaafireprotection.com",
+          "contact": "(800) 543-5556",
+          "description": "Specializes in UL300 kitchen suppression, hood cleaning, and fire system maintenance."
+        }
+      ]
+    },
+    {
+      "category": "Zoning & Permit Compliance",
+      "providers": [
+        {
+          "name": "City of Berkeley Permit Service Center",
+          "address": "1947 Center St, 3rd Floor, Berkeley, CA 94704",
+          "website": "https://berkeleyca.gov/construction-development/permits-design-parameters/permit-center",
+          "contact": "(510) 981-7500",
+          "description": "Provides support for zoning approvals, building permits, and sign permits to ensure businesses meet city compliance."
+        },
+        {
+          "name": "City of Berkeley Office of Economic Development",
+          "address": "2180 Milvia St, 5th Floor, Berkeley, CA 94704",
+          "website": "https://berkeleyca.gov/doing-business/berkeley-business-services",
+          "contact": "(510) 981-7530",
+          "description": "Advises businesses on local licensing, zoning, and planning regulations; acts as liaison with city departments."
+        },
+        {
+          "name": "Rhoades Planning Group",
+          "address": "2140 Shattuck Ave, Suite 705, Berkeley, CA 94704",
+          "website": "http://rhoadesplanninggroup.com",
+          "contact": "(510) 545-4341",
+          "description": "Consults on zoning, permitting, and land use compliance; helps businesses secure use permits and navigate approval processes."
+        },
+        {
+          "name": "Studio KDA",
+          "address": "1810 6th St, Suite A, Berkeley, CA 94710",
+          "website": "https://studiokda.com",
+          "contact": "(510) 841-3555",
+          "description": "Architecture firm specializing in code-compliant design and permitting for small business build-outs and remodels."
+        },
+        {
+          "name": "Kava Massih Architects",
+          "address": "920 Grayson St, Berkeley, CA 94710",
+          "website": "https://kavamassiharchitects.com",
+          "contact": "(510) 644-1920",
+          "description": "Experienced architecture firm assisting with zoning research, ADA planning, and permit submittals in Berkeley."
+        }
+      ]
+    },
+    {
+      "category": "Payroll & Labor Compliance",
+      "providers": [
+        {
+          "name": "Visionova HR Consulting, Inc.",
+          "address": "2001 Addison St, Suite 300, Berkeley, CA 94704",
+          "website": "https://visionovahr.com",
+          "contact": "(510) 243-5254",
+          "description": "Offers HR audits, compliance training, employee handbook development, and payroll process guidance."
+        },
+        {
+          "name": "Mary Pavellas Bookkeeping",
+          "address": "P.O. Box 2020, Berkeley, CA 94702",
+          "website": "N/A",
+          "contact": "(415) 521-4701",
+          "description": "Provides full-service payroll, employee classification advice, and tax filing for small businesses."
+        },
+        {
+          "name": "Savvy Nanny Payroll Services",
+          "address": "1326 Virginia St, Berkeley, CA 94702",
+          "website": "https://savvynannypayrollservices.com",
+          "contact": "(510) 542-7681",
+          "description": "Specializes in household and small business payroll setup, tax compliance, and workers\u2019 comp assistance."
+        },
+        {
+          "name": "Cloud 'n' Books",
+          "address": "1700 Solano Ave, Suite F, Berkeley, CA 94707",
+          "website": "https://cloudnbooks.com",
+          "contact": "(510) 398-0748",
+          "description": "Provides cloud-based payroll processing, wage reporting, and labor law compliance services."
+        },
+        {
+          "name": "Koff & Associates, Inc.",
+          "address": "2835 7th St, Berkeley, CA 94710",
+          "website": "https://koffassociates.com",
+          "contact": "(510) 658-5633",
+          "description": "HR firm assisting with employment compliance, benefit planning, wage audits, and labor law training."
+        }
+      ]
+    },
+    {
+      "category": "Zoning & Permit Compliance",
+      "providers": [
+        {
+          "name": "City of Berkeley Permit Service Center",
+          "address": "1947 Center St, 3rd Floor, Berkeley, CA 94704",
+          "website": "https://berkeleyca.gov/construction-development/permits-design-parameters",
+          "contact": "(510) 981-7500",
+          "description": "Assists with building permits, zoning approvals, use permits, and ADA compliance for small businesses."
+        },
+        {
+          "name": "City of Berkeley Office of Economic Development (OED)",
+          "address": "2180 Milvia St, 5th Floor, Berkeley, CA 94704",
+          "website": "https://berkeleyca.gov/doing-business/business-resources",
+          "contact": "(510) 981-7530",
+          "description": "Provides guidance on starting and operating a business in Berkeley, including compliance resources and referrals."
+        },
+        {
+          "name": "Rhoades Planning Group",
+          "address": "2140 Shattuck Ave, Suite 705, Berkeley, CA 94704",
+          "website": "http://rhoadesplanninggroup.com",
+          "contact": "(510) 545-4341",
+          "description": "Specializes in land use planning and permit consulting, including zoning feasibility studies and use permit navigation."
+        },
+        {
+          "name": "Studio KDA (Kahn Design Associates)",
+          "address": "1810 6th St, Suite A, Berkeley, CA 94710",
+          "website": "https://studiokda.com",
+          "contact": "(510) 841-3555",
+          "description": "Architectural design and permit expediting services, including building permit preparation and zoning compliance."
+        },
+        {
+          "name": "Kava Massih Architects",
+          "address": "920 Grayson St, Berkeley, CA 94710",
+          "website": "https://kavamassiharchitects.com",
+          "contact": "(510) 644-1920",
+          "description": "Full-service architectural firm providing zoning, planning, and permit compliance assistance."
+        }
+      ]
+    },
+    {
+      "category": "Payroll & Labor Compliance",
+      "providers": [
+        {
+          "name": "Visionova HR Consulting, Inc.",
+          "address": "2001 Addison St, Suite 300, Berkeley, CA 94704",
+          "website": "https://visionovahr.com",
+          "contact": "(510) 243-5254",
+          "description": "HR consulting services to help small businesses comply with wage laws, sick leave, and payroll regulations."
+        },
+        {
+          "name": "Mary Pavellas Bookkeeping",
+          "address": "P.O. Box 2020, Berkeley, CA 94702",
+          "website": "N/A",
+          "contact": "(415) 521-4701",
+          "description": "Bookkeeping and payroll services including tax filings, wage calculation, and labor compliance."
+        },
+        {
+          "name": "Savvy Nanny Payroll Services",
+          "address": "1326 Virginia St, Berkeley, CA 94702",
+          "website": "https://savvynannypayrollservices.com",
+          "contact": "(510) 542-7681",
+          "description": "Payroll and tax filing services for household employers and small businesses, ensuring full compliance."
+        },
+        {
+          "name": "Cloud 'n' Books",
+          "address": "1700 Solano Ave, Suite F, Berkeley, CA 94707",
+          "website": "http://www.cloudnbooks.com",
+          "contact": "(510) 398-0748",
+          "description": "Cloud-based bookkeeping and payroll solutions including HR support and labor compliance guidance."
+        },
+        {
+          "name": "Koff & Associates, Inc.",
+          "address": "2835 7th St, Berkeley, CA 94710",
+          "website": "https://koffassociates.com",
+          "contact": "(510) 658-5633",
+          "description": "HR consultants providing wage audits, job classification reviews, and employment law compliance."
+        }
+      ]
+    },
+    {
+      "category": "Insurance Compliance",
+      "providers": [
+        {
+          "name": "Fidelity Insurance Service, Inc.",
+          "address": "801 Allston Way, Berkeley, CA 94710",
+          "website": "https://fidelityinsuranceservice.com",
+          "contact": "(510) 548-8200",
+          "description": "Independent broker offering general liability, workers\u2019 comp, property insurance, and compliance support."
+        },
+        {
+          "name": "Cynthia Blumgart \u2013 State Farm Insurance Agency",
+          "address": "1950 Addison St, Suite 105, Berkeley, CA 94704",
+          "website": "https://statefarm.com/agent/US/CA/Berkeley/Cynthia-Blumgart",
+          "contact": "(510) 848-2132",
+          "description": "Offers small business insurance including liability, property, workers\u2019 comp, and business interruption."
+        },
+        {
+          "name": "Timothy Carter \u2013 Allstate Insurance",
+          "address": "2489 Martin Luther King Jr. Way, Berkeley, CA 94704",
+          "website": "https://agents.allstate.com/timothy-carter-berkeley-ca.html",
+          "contact": "(510) 649-3870",
+          "description": "Provides commercial insurance packages including liability, workers\u2019 comp, and auto for small businesses."
+        },
+        {
+          "name": "David Reidenbach \u2013 Farmers Insurance",
+          "address": "2625 Alcatraz Ave, Berkeley, CA 94705",
+          "website": "https://agents.farmers.com/ca/berkeley/david-reidenbach",
+          "contact": "(510) 849-4909",
+          "description": "Local Farmers agent offering business owners' policies, umbrella insurance, and compliance-related coverage."
+        },
+        {
+          "name": "Gary Eason \u2013 State Farm Insurance",
+          "address": "2288 Fulton St, Suite 310, Berkeley, CA 94704",
+          "website": "https://garyeason.org",
+          "contact": "(510) 843-1092",
+          "description": "Berkeley-based insurance agent offering policies to meet legal and contractual insurance requirements."
+        }
+      ]
+    },
+    {
+      "category": "Workplace Safety (OSHA) Compliance",
+      "providers": [
+        {
+          "name": "Labor Occupational Health Program (LOHP)",
+          "address": "1608 Fourth St, Suite 220, Berkeley, CA 94710",
+          "website": "https://lohp.berkeley.edu",
+          "contact": "(510) 642-5507",
+          "description": "Provides free training, resources, and tools to help small businesses improve health and safety practices."
+        },
+        {
+          "name": "ROI Safety Services",
+          "address": "Berkeley, CA (mobile)",
+          "website": "https://roisafetyservices.com",
+          "contact": "(714) 520-1608",
+          "description": "Provides on-site OSHA safety training, IIPP development, and compliance audits."
+        },
+        {
+          "name": "City of Berkeley CERT Program",
+          "address": "997 Cedar St, Berkeley, CA 94710",
+          "website": "https://berkeleyca.gov/safety-health/fire-department/cert",
+          "contact": "(510) 981-5605",
+          "description": "Offers free disaster and emergency response training to improve business safety readiness."
+        },
+        {
+          "name": "Safety Training Seminars (Berkeley CPR & First Aid Classes)",
+          "address": "1700 Solano Ave, Suite F, Berkeley, CA 94707",
+          "website": "https://bayareacpr.org",
+          "contact": "(510) 398-0748",
+          "description": "AHA-certified CPR, First Aid, and AED courses to meet OSHA and Cal/OSHA workplace training requirements."
+        },
+        {
+          "name": "Cal/OSHA Consultation Service",
+          "address": "1515 Clay St, Suite 1103, Oakland, CA 94612",
+          "website": "https://www.dir.ca.gov/dosh/consultation.html",
+          "contact": "(510) 622-2891",
+          "description": "Free and confidential Cal/OSHA assistance to help small businesses identify hazards and comply with safety laws."
+        }
+      ]
+    }
+  ]
+}
