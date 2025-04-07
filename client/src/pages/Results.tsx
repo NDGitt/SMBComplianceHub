@@ -52,14 +52,43 @@ const Results = () => {
       setSelectedCategories(allCategories);
       setSelectedUrgencies(allUrgencies);
       
-      // Extract business type and location from the first requirement if available
-      if (requirementsByCategory.length > 0 && requirementsByCategory[0].requirements.length > 0) {
-        // These would normally come from the API, but we're mocking them here
-        setDisplayedBusinessType("Restaurant");
-        setDisplayedLocation("Providence, Rhode Island");
-      }
+      // Fetch business type and location details from API or use parameters
+      const fetchBusinessAndLocationDetails = async () => {
+        try {
+          // Fetch business type details
+          const businessTypeResponse = await fetch(`/api/business-types`);
+          const businessTypes = await businessTypeResponse.json();
+          const businessType = businessTypes.find(
+            (bt: any) => bt.id.toString() === businessTypeId
+          );
+          
+          // Fetch location details
+          const locationResponse = await fetch(`/api/locations/ca`);
+          const locations = await locationResponse.json();
+          const location = locations.find(
+            (loc: any) => loc.id.toString() === locationId
+          );
+          
+          if (businessType) {
+            setDisplayedBusinessType(businessType.name);
+          }
+          
+          if (location) {
+            setDisplayedLocation(`${location.city}, ${location.state}`);
+          } else {
+            setDisplayedLocation("Berkeley, California");
+          }
+        } catch (error) {
+          console.error("Error fetching details:", error);
+          // Fallback to Berkeley, California
+          setDisplayedBusinessType("Restaurant");
+          setDisplayedLocation("Berkeley, California");
+        }
+      };
+      
+      fetchBusinessAndLocationDetails();
     }
-  }, [requirementsByCategory]);
+  }, [requirementsByCategory, businessTypeId, locationId]);
 
   // Filter requirements based on search term, selected categories, and urgencies
   const filteredRequirements = requirementsByCategory
