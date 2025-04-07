@@ -1,0 +1,146 @@
+import { Link } from "wouter";
+import { Button } from "@/components/ui/button";
+
+const Home = () => {
+  return (
+    <div>
+      {/* Hero Section */}
+      <section className="bg-gradient-to-r from-blue-100 to-cyan-50 py-12 md:py-20">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-col md:flex-row items-center">
+            <div className="md:w-1/2 mb-8 md:mb-0">
+              <h1 className="text-3xl md:text-5xl font-bold text-gray-800 mb-4">
+                Compliance made simple for small businesses
+              </h1>
+              <p className="text-lg md:text-xl text-gray-600 mb-6">
+                Discover what compliance requirements apply to your business and
+                find trusted service providers to help you stay compliant.
+              </p>
+              <Link href="/discovery">
+                <Button
+                  className="bg-amber-500 hover:bg-amber-600 text-white font-bold py-3 px-6 rounded-md shadow-md transition"
+                  size="lg"
+                >
+                  Discover Your Requirements
+                </Button>
+              </Link>
+            </div>
+            <div className="md:w-1/2 md:pl-12">
+              <img
+                src="https://images.unsplash.com/photo-1579389083078-4e7018379f7e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                alt="Small business owner working"
+                className="rounded-lg shadow-lg"
+                width="600"
+                height="400"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Features Section */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-12">
+            How SMBlink Helps Your Business
+          </h2>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="bg-gray-50 p-6 rounded-lg shadow-sm">
+              <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-6 w-6 text-primary"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold mb-2">Identify Requirements</h3>
+              <p className="text-gray-600">
+                Quickly discover all compliance requirements specific to your
+                business type and location.
+              </p>
+            </div>
+
+            <div className="bg-gray-50 p-6 rounded-lg shadow-sm">
+              <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-6 w-6 text-primary"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+                  />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold mb-2">Find Service Providers</h3>
+              <p className="text-gray-600">
+                Connect with qualified, trusted service providers who can help
+                you meet compliance needs.
+              </p>
+            </div>
+
+            <div className="bg-gray-50 p-6 rounded-lg shadow-sm">
+              <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-6 w-6 text-primary"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"
+                  />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold mb-2">Stay Compliant</h3>
+              <p className="text-gray-600">
+                Keep your business in good standing and avoid costly fines or
+                legal issues from non-compliance.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-16 bg-gradient-to-r from-blue-600 to-blue-700 text-white">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-3xl font-bold mb-4">
+            Ready to simplify your compliance journey?
+          </h2>
+          <p className="text-xl mb-8">
+            Join thousands of small business owners who rely on SMBlink.
+          </p>
+          <Link href="/discovery">
+            <Button
+              className="bg-white text-blue-600 hover:bg-gray-100 font-bold py-3 px-8 rounded-md shadow-md transition"
+              size="lg"
+            >
+              Get Started Now
+            </Button>
+          </Link>
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default Home;
