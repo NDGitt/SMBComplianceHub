@@ -10,11 +10,11 @@ const Home = () => {
           <div className="flex flex-col md:flex-row items-center">
             <div className="md:w-1/2 mb-8 md:mb-0">
               <h1 className="text-3xl md:text-5xl font-bold text-gray-800 mb-4">
-                Compliance made simple for small businesses
+                Berkeley Business Compliance Portal
               </h1>
               <p className="text-lg md:text-xl text-gray-600 mb-6">
-                Discover what compliance requirements apply to your business and
-                find trusted service providers to help you stay compliant.
+                Discover the exact requirements for your Berkeley business and
+                find local service providers to help you stay compliant with city, state and federal regulations.
               </p>
               <Link href="/discovery">
                 <Button
@@ -42,7 +42,7 @@ const Home = () => {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12">
-            How SMBlink Helps Your Business
+            How We Help Berkeley Businesses
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-gray-50 p-6 rounded-lg shadow-sm">
@@ -62,10 +62,10 @@ const Home = () => {
                   />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold mb-2">Identify Requirements</h3>
+              <h3 className="text-xl font-bold mb-2">Berkeley-Specific Requirements</h3>
               <p className="text-gray-600">
-                Quickly discover all compliance requirements specific to your
-                business type and location.
+                Access comprehensive compliance requirements for restaurants, daycares, and salons 
+                operating in Berkeley, CA with actual links to forms and applications.
               </p>
             </div>
 
@@ -86,10 +86,10 @@ const Home = () => {
                   />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold mb-2">Find Service Providers</h3>
+              <h3 className="text-xl font-bold mb-2">Local Service Providers</h3>
               <p className="text-gray-600">
-                Connect with qualified, trusted service providers who can help
-                you meet compliance needs.
+                Connect with Berkeley-area experts and service providers who specialize in local 
+                compliance requirements and can guide you through the process.
               </p>
             </div>
 
@@ -110,10 +110,10 @@ const Home = () => {
                   />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold mb-2">Stay Compliant</h3>
+              <h3 className="text-xl font-bold mb-2">Multi-Level Compliance</h3>
               <p className="text-gray-600">
-                Keep your business in good standing and avoid costly fines or
-                legal issues from non-compliance.
+                Understand city, state, and federal requirements relevant to your Berkeley business 
+                and get guidance on meeting all applicable regulations.
               </p>
             </div>
           </div>
@@ -124,10 +124,10 @@ const Home = () => {
       <section className="py-16 bg-gradient-to-r from-blue-600 to-blue-700 text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-4">
-            Ready to simplify your compliance journey?
+            Ready to navigate Berkeley's business requirements?
           </h2>
           <p className="text-xl mb-8">
-            Join thousands of small business owners who rely on SMBlink.
+            Start your compliant Berkeley business journey with our comprehensive guidance tool.
           </p>
           <Link href="/discovery">
             <Button

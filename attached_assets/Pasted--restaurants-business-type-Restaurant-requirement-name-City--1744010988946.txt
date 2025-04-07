@@ -1,0 +1,344 @@
+{
+  "restaurants": [
+    {
+      "business_type": "Restaurant",
+      "requirement_name": "City Business License",
+      "authority": "City of Berkeley (Finance Department)",
+      "description": "All businesses in Berkeley must obtain a city business license (business tax certificate) before operating&#8203;:contentReference[oaicite:0]{index=0}. This registers the business and enables local taxation, and it must be renewed annually&#8203;:contentReference[oaicite:1]{index=1}.",
+      "link": "https://berkeleyca.gov/doing-business/operating-berkeley/business-licenses/new-business-licenses",
+      "notes": "Submit application to Berkeley's Finance Department (often via the Office of Economic Development). Zoning and safety compliance will be verified as part of the license approval process&#8203;:contentReference[oaicite:2]{index=2}. Renewal is required each year by Dec 31 (with fees due by March 1)&#8203;:contentReference[oaicite:3]{index=3}."
+    },
+    {
+      "business_type": "Restaurant",
+      "requirement_name": "Zoning Approval (Zoning Certificate or Permit)",
+      "authority": "City of Berkeley (Planning Department)",
+      "description": "Proof of zoning compliance is required for the business location. Most businesses need an over-the-counter Zoning Certificate confirming the site is zoned for restaurant use&#8203;:contentReference[oaicite:4]{index=4}. If the location or use is not permitted by-right, a higher-level zoning permit (Administrative Use Permit) may be required.",
+      "link": "https://berkeleyca.gov/construction-development/permits-design-parameters/permit-types/zoning-permits",
+      "notes": "The zoning review is typically done when applying for the business license. A planner ensures the address and proposed use meet Berkeley’s Zoning Ordinance. For example, restaurants in certain zones may require a use permit. Home-based businesses (not typical for restaurants) or unusual locations would need special approval. The Zoning Certificate application must be submitted to Berkeley’s Planning Department and may involve a site inspection&#8203;:contentReference[oaicite:5]{index=5}."
+    },
+    {
+      "business_type": "Restaurant",
+      "requirement_name": "Health Permit (Food Service Establishment Permit)",
+      "authority": "City of Berkeley (Health, Environmental Health Division)",
+      "description": "Restaurants must obtain a health permit from Berkeley’s Environmental Health Division before opening&#8203;:contentReference[oaicite:6]{index=6}. This permit certifies compliance with food safety regulations and allows the establishment to prepare and serve food to the public.",
+      "link": "https://berkeleyca.gov/doing-business/operating-berkeley/food-service",
+      "notes": "Application is typically through the City of Berkeley Department of Health (Environmental Health). An inspector will review plans (for new construction) and conduct an on-site inspection to ensure the facility meets California Retail Food Code standards. All new and existing food facilities are required to have a valid health permit and cannot operate without one&#8203;:contentReference[oaicite:7]{index=7}. The permit must be maintained (with annual fees) and the restaurant will undergo periodic health inspections."
+    },
+    {
+      "business_type": "Restaurant",
+      "requirement_name": "Fire Department Inspection",
+      "authority": "City of Berkeley Fire Department",
+      "description": "The Berkeley Fire Department must inspect the restaurant premises for fire and life safety compliance. A fire inspection or fire clearance is generally required before the business opens, to verify extinguishers, exits, alarms, kitchen hood suppression, and occupancy limits are compliant.",
+      "link": "https://berkeleyca.gov/safety-health/fire-department/fire-prevention",
+      "notes": "Restaurant operations involve fire hazards (cooking equipment), so the Fire Department will conduct an inspection. In Berkeley, businesses can request a Fire Prevention inspection for a building or project&#8203;:contentReference[oaicite:8]{index=8}. For new restaurants, this often occurs in coordination with building permit final inspection or before granting a Certificate of Occupancy. Ongoing fire inspections may occur periodically. (For daycare facilities, a formal fire clearance from the Fire Marshal is required by state licensing – see daycare section.)"
+    },
+    {
+      "business_type": "Restaurant",
+      "requirement_name": "Sign Permit",
+      "authority": "City of Berkeley (Planning/Building Department)",
+      "description": "If the restaurant will have any external signage (including wall signs, projecting signs, or awnings with text), a City sign permit and design review approval are required. Berkeley mandates permits for new signs to ensure they meet zoning standards and design guidelines.",
+      "link": "https://berkeleyca.gov/construction-development/permits-design-parameters/design-review",
+      "notes": "Apply through the City’s Permit Service Center for a sign permit. The application usually requires a design review process&#8203;:contentReference[oaicite:9]{index=9} for compliance with Berkeley’s Sign Ordinance (size, lighting, placement) and possibly approval by the Design Review Committee if in certain districts. Businesses should obtain this permit before installing any exterior signage. Note: even altering an existing sign face may require a permit."
+    },
+    {
+      "business_type": "Restaurant",
+      "requirement_name": "Berkeley Minimum Wage & Paid Sick Leave",
+      "authority": "City of Berkeley (Labor Standards Ordinances)",
+      "description": "Berkeley’s local labor ordinances require employers to pay a minimum wage (currently $18.67/hour as of July 1, 2024)&#8203;:contentReference[oaicite:10]{index=10}, which is higher than the state minimum, and to provide paid sick leave to employees. All restaurant employers in Berkeley must comply with these requirements.",
+      "link": "https://berkeley.municipal.codes/BMC/13.99",
+      "notes": "The current Berkeley minimum wage is $18.67 (effective July 2024)&#8203;:contentReference[oaicite:11]{index=11} and increases periodically. Employers must also adhere to Berkeley’s Paid Sick Leave ordinance (e.g., accrual of at least 1 hour of sick leave per 30 hours worked)&#8203;:contentReference[oaicite:12]{index=12}. These ordinances are enforced by the City (Berkeley Labor Standards). Employers should post the official Berkeley Labor Law poster and ensure wages and benefits meet or exceed local requirements."
+    },
+    {
+      "business_type": "Restaurant",
+      "requirement_name": "Seller’s Permit (Sales Tax)",
+      "authority": "State of California (Dept. of Tax and Fee Administration)",
+      "description": "A California Seller’s Permit is required for businesses that sell tangible goods. Restaurants must obtain this state permit to legally collect and remit sales tax on taxable sales (e.g. prepared food and beverages)&#8203;:contentReference[oaicite:13]{index=13}.",
+      "link": "https://www.cdtfa.ca.gov/taxes-and-fees/faqseller.htm",
+      "notes": "Register with the California Department of Tax and Fee Administration (CDTFA) for a seller’s permit, ideally before opening. There is no fee for the permit, but it requires providing business details and expected sales. Once obtained, the restaurant must report and pay sales taxes to the state periodically. (If the restaurant does not sell any taxable items – uncommon in this industry – a permit might not be needed, but virtually all eateries have some taxable sales.)"
+    },
+    {
+      "business_type": "Restaurant",
+      "requirement_name": "Food Handler Cards",
+      "authority": "State of California (Health & Safety Code)",
+      "description": "California law requires that all food handling employees (chefs, cooks, servers, etc.) obtain a California Food Handler Card within 30 days of hire&#8203;:contentReference[oaicite:14]{index=14}&#8203;:contentReference[oaicite:15]{index=15}. This card is earned by completing an approved food safety training and exam.",
+      "link": "https://www.foodhandlercardcalifornia.com",
+      "notes": "The Food Handler Card is a basic food safety certificate. Employees can take online or in-person training from an ANSI-accredited provider and must pass a test. The card is valid for 3 years&#8203;:contentReference[oaicite:16]{index=16}. Employers (and local health inspectors) will verify that all applicable staff have valid cards. (Employees who are certified food safety managers are exempt from needing a handler card.)"
+    },
+    {
+      "business_type": "Restaurant",
+      "requirement_name": "Certified Food Safety Manager",
+      "authority": "State of California (Health & Safety Code)",
+      "description": "In addition to food handler cards for staff, each food establishment in California must have at least one owner or employee who has passed an accredited Food Protection Manager exam&#8203;:contentReference[oaicite:17]{index=17}. This person holds a Certified Food Safety Manager (CFM) certificate (also known as ServSafe or equivalent).",
+      "link": "https://www.sf.gov/become-certified-food-safety-manager-your-facility",
+      "notes": "Within 60 days of opening, the restaurant should have a designated certified food manager. The certification is obtained by taking an approved course and examination&#8203;:contentReference[oaicite:18]{index=18}, and it remains valid for five years&#8203;:contentReference[oaicite:19]{index=19}. Most restaurants satisfy this by having a manager or chef obtain a ServSafe Manager certificate. Local health inspectors will check for compliance with this requirement during inspections."
+    },
+    {
+      "business_type": "Restaurant",
+      "requirement_name": "Alcohol License (ABC) – if serving alcohol",
+      "authority": "State of California (Alcoholic Beverage Control)",
+      "description": "If the restaurant intends to serve beer, wine, or spirits, it must secure the appropriate license from the California Department of Alcoholic Beverage Control (ABC). For example, a Type 41 (On-Sale Beer & Wine) license is needed for beer/wine service, and a Type 47 (On-Sale General) for full liquor in a bona fide eating place&#8203;:contentReference[oaicite:20]{index=20}.",
+      "link": "https://www.abc.ca.gov/licensing",
+      "notes": "The restaurant must apply through ABC’s district office (Oakland covers Berkeley) for a new license or a transfer if taking over an existing licensed location. The process involves background checks, local zoning approval, and a 30-day public notice period. Serving alcohol without an ABC license is illegal. If granted, the business must comply with ABC regulations (hour limits, training servers in Responsible Beverage Service, etc.) and renew the license annually."
+    },
+    {
+      "business_type": "Restaurant",
+      "requirement_name": "California Employer Registration (if hiring employees)",
+      "authority": "State of California (Employment Development Dept.)",
+      "description": "Employers must register with the California EDD within 15 days of paying over $100 in wages&#8203;:contentReference[oaicite:21]{index=21}. This registration establishes an employer payroll tax account for unemployment insurance, disability insurance, and state income tax withholding.",
+      "link": "https://edd.ca.gov/en/Payroll_Taxes/Registration_and_eServices/",
+      "notes": "Any restaurant with employees (even one part-time worker) is required to register. The employer will receive a State Employer Account Number and thereafter must file payroll tax returns (DE-9/DE-9C quarterly, DE-88 deposits, etc.) and comply with state payroll tax obligations. Failing to register and remit payroll taxes can result in penalties."
+    },
+    {
+      "business_type": "Restaurant",
+      "requirement_name": "Workers’ Compensation Insurance",
+      "authority": "State of California (Labor Code §3700)",
+      "description": "California law mandates that every employer carry workers’ compensation insurance for their employees&#8203;:contentReference[oaicite:22]{index=22}. Restaurants with any employees (even one) must obtain a workers’ comp policy to cover workplace injuries or illnesses.",
+      "link": "https://www.dir.ca.gov/dwc/employer.htm",
+      "notes": "Proof of workers’ comp coverage is often required when obtaining a business license or other permits if the business has employees. The insurance can be purchased from a private carrier or the State Compensation Insurance Fund. Failure to have coverage can result in severe penalties or stop-work orders&#8203;:contentReference[oaicite:23]{index=23}. (Sole proprietors with no employees are exempt, but if the restaurant is hiring staff, this is mandatory.)"
+    },
+    {
+      "business_type": "Restaurant",
+      "requirement_name": "Cal/OSHA and Safety Compliance",
+      "authority": "State of California (Cal/OSHA, Dept. of Industrial Relations)",
+      "description": "Restaurants must comply with occupational safety and health regulations. California requires employers to implement an Injury and Illness Prevention Program and provide a safe workplace free from recognized hazards&#8203;:contentReference[oaicite:24]{index=24}. This includes compliance with Cal/OSHA standards for kitchen safety, ergonomics, hazard communication (for cleaning chemicals), etc.",
+      "link": "https://www.dir.ca.gov/dosh/",
+      "notes": "There is no separate permit to obtain from Cal/OSHA to open, but ongoing compliance is required. Employers must train employees on job hazards (e.g., knife safety, slip-and-fall prevention, safe lifting) and keep records of injuries. If the restaurant has 10+ employees, certain injury reporting and posting requirements (Cal/OSHA 300 log) apply. Cal/OSHA can inspect workplaces to enforce safety laws."
+    },
+    {
+      "business_type": "Restaurant",
+      "requirement_name": "Federal EIN (Tax ID)",
+      "authority": "U.S. Federal (IRS)",
+      "description": "An Employer Identification Number (EIN) from the IRS is required for most businesses, especially those with employees or operating as a corporation/LLC. The EIN is used for federal tax filings&#8203;:contentReference[oaicite:25]{index=25} and payroll tax reporting.",
+      "link": "https://www.irs.gov/businesses/small-businesses-self-employed/apply-for-an-employer-identification-number-ein-online",
+      "notes": "The EIN can be obtained online from the IRS at no cost. It is essentially the business’s Social Security number for federal tax purposes. A sole proprietor without employees may use their SSN, but obtaining an EIN is recommended. The EIN is needed to set up payroll (for withholding federal income tax, Social Security, Medicare) and to file business tax returns (partnership, corporation, etc.)."
+    },
+    {
+      "business_type": "Restaurant",
+      "requirement_name": "Federal Labor Standards (FLSA)",
+      "authority": "U.S. Federal (Dept. of Labor)",
+      "description": "The Fair Labor Standards Act (FLSA) sets federal minimum wage ($7.25/hour) and overtime requirements (time-and-a-half pay for hours over 40 per week)&#8203;:contentReference[oaicite:26]{index=26}. Restaurants must adhere to these rules (although California’s laws are stricter). The FLSA also restricts youth (under 18) from certain hazardous jobs and limits working hours for minors.",
+      "link": "https://www.dol.gov/agencies/whd/flsa",
+      "notes": "In practice, California’s higher minimum wage and overtime laws supersede the federal minimum, but federal law still applies. Restaurants must also follow federal youth employment provisions (for example, employees under 18 cannot operate dangerous equipment like meat slicers). Additionally, the business must display federal labor posters (e.g., the \"Employee Rights\" under FLSA poster). Compliance with FLSA is enforced by the U.S. Department of Labor’s Wage and Hour Division."
+    },
+    {
+      "business_type": "Restaurant",
+      "requirement_name": "OSHA Safety Standards (Federal)",
+      "authority": "U.S. Federal (Occupational Safety & Health Administration)",
+      "description": "At the federal level, employers are subject to OSHA’s requirement to provide a workplace free from serious hazards&#8203;:contentReference[oaicite:27]{index=27}. In California, OSHA standards are enforced by Cal/OSHA, but federally, restaurants must comply with general OSHA regulations (e.g., on hazard communication, machine guarding, etc.).",
+      "link": "https://www.osha.gov/smallbusiness",
+      "notes": "Most workplace safety oversight in Berkeley restaurants will be through Cal/OSHA (since California has an OSHA-approved state plan). By complying with Cal/OSHA, the business inherently meets federal OSHA requirements. Key federal/Cal OSHA expectations for restaurants include: proper kitchen ventilation, fire suppression systems, training on handling cleaning chemicals (with Safety Data Sheets), and ergonomics to prevent repetitive strain. Employers with 10 or fewer employees are exempt from some OSHA injury recordkeeping, but not from maintaining a safe workplace."
+    }
+  ],
+  "daycares": [
+    {
+      "business_type": "Daycare",
+      "requirement_name": "City Business License",
+      "authority": "City of Berkeley (Finance Department)",
+      "description": "Any daycare operating in Berkeley (including home-based child care) must obtain a Berkeley business license&#8203;:contentReference[oaicite:28]{index=28}. This registers the business for the city’s business tax and is required even for small in-home daycares.",
+      "link": "https://berkeleyca.gov/doing-business/operating-berkeley/business-licenses/new-business-licenses",
+      "notes": "The process is similar to other businesses: an application is filed with the City, and it must be renewed annually. Even if the daycare is a home-based “family daycare,” Berkeley still requires a business license (as it does for all home businesses)&#8203;:contentReference[oaicite:29]{index=29}. The daycare should not commence operations until the license (business tax certificate) is issued."
+    },
+    {
+      "business_type": "Daycare",
+      "requirement_name": "Zoning Compliance",
+      "authority": "City of Berkeley (Planning Department)",
+      "description": "Daycares must comply with Berkeley zoning regulations. Small family daycares (up to 8 children) are permitted by state law in residential zones and typically only need to inform the City. Large family daycares (9-14 children in a home) or daycare centers (in commercial or institutional spaces) may require a zoning permit or use permit from the City.",
+      "link": "https://berkeley.municipal.codes/BMC/23.206.040",
+      "notes": "Under California law, cities must allow small family child care homes in residential areas without extensive permitting. Berkeley treats small family daycares as a residential use by-right (no discretionary permit). For large family child care homes, Berkeley may require an Administrative Use Permit or similar approval, with consideration of parking and neighbor notification, consistent with state law limitations&#8203;:contentReference[oaicite:30]{index=30}. A daycare center (not in a home) must be in a zoning district that allows child care/education facilities, potentially requiring a Use Permit if not already designated. It’s advisable to check with Berkeley’s Planning Department before establishing a daycare at any location."
+    },
+    {
+      "business_type": "Daycare",
+      "requirement_name": "Fire Safety Clearance",
+      "authority": "City of Berkeley Fire Department",
+      "description": "Daycare facilities are subject to fire and life safety inspections. For state daycare licensing, a fire clearance from the local Fire Department is required for any child care center and for large family child care homes. Berkeley Fire officials will verify that the home or center meets fire code standards (e.g., exits, smoke detectors, fire extinguishers).",
+      "link": "https://berkeleyca.gov/safety-health/fire-department/fire-prevention",
+      "notes": "The fire inspection for a daycare is typically documented on a state Fire Clearance form that the Fire Department signs off for the licensing application. Small home daycares may be exempt from formal fire clearance unless there are certain conditions (like care on a second floor or overnight care), but large home daycares definitely require it. The Berkeley Fire Department will check for things like safe heater/furnace, two exits in homes for large daycares, and any other conditions mandated by state regulations. This inspection must be passed before the state license is granted."
+    },
+    {
+      "business_type": "Daycare",
+      "requirement_name": "Sign Permit (if applicable)",
+      "authority": "City of Berkeley (Planning Department)",
+      "description": "If the daycare (especially a commercial daycare center) intends to put up a sign or banner identifying the business, a sign permit from the City is required. Home-based family daycares typically do not post signage in residential zones, but any proposed signage would need City approval.",
+      "link": "https://berkeleyca.gov/construction-development/permits-design-parameters/design-review",
+      "notes": "This requirement is similar to other businesses. In practice, small home daycares usually keep a low profile and often forego signage to maintain residential character. However, if a daycare center in a commercial building wants a sign, they must follow Berkeley’s sign regulations (size, design, etc.) and obtain the necessary permit before installation."
+    },
+    {
+      "business_type": "Daycare",
+      "requirement_name": "Berkeley Minimum Wage & Paid Sick Leave",
+      "authority": "City of Berkeley (Labor Standards Ordinances)",
+      "description": "If the daycare has employees (other than the owner), it must pay at least the Berkeley minimum wage ($18.67/hr as of 2024)&#8203;:contentReference[oaicite:31]{index=31} and provide paid sick leave in accordance with local law. This applies whether the daycare is home-based or a center, as long as it employs staff.",
+      "link": "https://berkeley.municipal.codes/BMC/13.99",
+      "notes": "Often, small family daycares may not have outside employees (the caregiver is the licensee). But any assistants or staff are covered by Berkeley’s wage ordinance. The daycare must also follow Berkeley’s paid sick leave rules (e.g., small employers cap accrual at 48 hours)&#8203;:contentReference[oaicite:32]{index=32}. These local requirements ensure that daycare workers in Berkeley receive higher compensation and benefits than the state minimum. Posters outlining employee rights should be displayed at the daycare if employees are on site."
+    },
+    {
+      "business_type": "Daycare",
+      "requirement_name": "California Child Care License",
+      "authority": "State of California (Dept. of Social Services - Community Care Licensing)",
+      "description": "All daycares must be licensed by the State of California. Home-based daycares require a Family Child Care Home license, and larger facilities require a Child Care Center license&#8203;:contentReference[oaicite:33]{index=33}. This ensures the daycare meets health, safety, and staffing standards set by state law.",
+      "link": "https://www.cdss.ca.gov/inforesources/child-care-licensing/how-to-become-licensed",
+      "notes": "To obtain a license, applicants must attend an orientation, submit an application to the Community Care Licensing Division (CCLD), and pass background checks. The state license process includes: fingerprinting of all adults in the facility for criminal clearance, TB tests and immunizations for caregivers, a home/facility inspection, and meeting requirements for caregiver training (including CPR/First Aid). Small Family Child Care Homes (up to 8 children) and Large Family Child Care Homes (9-14 children) are the two types for home daycares, while a Child Care Center license is needed for any non-residential or larger child care operation. The license must be maintained in good standing with annual fees and periodic inspections by state licensing analysts&#8203;:contentReference[oaicite:34]{index=34}."
+    },
+    {
+      "business_type": "Daycare",
+      "requirement_name": "Employee Background Checks",
+      "authority": "State of California (Dept. of Social Services)",
+      "description": "All daycare operators, staff, and any adult (18+) residing or working in a daycare home must undergo a Department of Justice and FBI background check and receive a criminal record clearance. This is part of state licensing requirements to ensure child safety.",
+      "link": "https://www.cdss.ca.gov/inforesources/Community-Care-Licensing/Background-Check-Requirements",
+      "notes": "Live Scan fingerprinting is used to check criminal history. Certain convictions will bar individuals from being licensed or employed in a child care facility (unless an exemption is granted for minor offenses). This process is coordinated during the license application – CCLD will not approve a license until all required individuals are cleared. Additionally, all daycare providers and employees are mandated reporters of child abuse and must complete Mandated Reporter training (a condition of licensure)."
+    },
+    {
+      "business_type": "Daycare",
+      "requirement_name": "Staff Training and Qualifications",
+      "authority": "State of California (Health & Safety Code; EMS Authority)",
+      "description": "Daycare licensees and staff are required to have certain training, including Pediatric CPR and First Aid certification and preventive health practices training&#8203;:contentReference[oaicite:35]{index=35}. Also, child care center teachers/directors must meet education and experience qualifications as defined by CCLD regulations.",
+      "link": "https://www.cdss.ca.gov/Portals/9/CCLD/CCP%20Documents/Provider%20Requirements%20FCCH.pdf",
+      "notes": "For family child care homes: the licensee (and any adult assistant) must complete 16 hours of health and safety training, covering pediatric CPR, pediatric first aid, and preventive health practices&#8203;:contentReference[oaicite:36]{index=36}. Child care center personnel have a different set of requirements (e.g., site supervisors and teachers need early childhood education units and experience). These requirements are verified during licensing. Additionally, all caregivers must have measles, pertussis, and flu immunizations (or sign a declination for flu) per state law (SB 792). Maintaining current CPR/First Aid certification is an ongoing requirement."
+    },
+    {
+      "business_type": "Daycare",
+      "requirement_name": "California Employer Requirements (if staff hired)",
+      "authority": "State of California (Employment/Labor Law)",
+      "description": "If the daycare employs assistants or teachers, it must register with EDD for payroll taxes, carry workers’ compensation insurance, and comply with California labor laws (minimum wage, overtime, rest/meal breaks, etc.). Workers’ comp is mandatory for even one employee&#8203;:contentReference[oaicite:37]{index=37}, and employees must be reported to EDD within 20 days of hire (New Hire Reporting).",
+      "link": "https://edd.ca.gov/Payroll_Taxes/FAQ_-_Am_I_Required_to_Register_as_an_Employer.htm",
+      "notes": "This mirrors the obligations of any employer: obtain an EDD employer account number (for unemployment insurance taxes)&#8203;:contentReference[oaicite:38]{index=38}, provide pay stubs and comply with wage laws, and have a written pay policy. Daycare workers are subject to California’s wage orders (likely Wage Order 5 for education/institutional or 15 for household employment, depending on setup). For overtime: live-in employees have different rules, but generally, overtime kicks in as with other jobs (over 8 hours/day or 40/week in CA). If the daycare is small and only uses family members without formal employment, these may not apply, but any payroll employment triggers them."
+    },
+    {
+      "business_type": "Daycare",
+      "requirement_name": "Federal EIN (Tax ID)",
+      "authority": "U.S. Federal (IRS)",
+      "description": "A daycare should obtain a Federal Employer Identification Number from the IRS, especially if it has employees or is operating as an LLC/corporation. The EIN is necessary for federal tax filings and payroll tax remittances&#8203;:contentReference[oaicite:39]{index=39}.",
+      "link": "https://www.irs.gov/businesses/small-businesses-self-employed/employer-id-numbers",
+      "notes": "Even home daycares often get an EIN so that parents can use the EIN for tax purposes (to claim the child care tax credit). The EIN is used when issuing receipts to parents and when filing the daycare’s own taxes. If the daycare has employees, an EIN is absolutely required to deposit federal payroll taxes (social security, Medicare, withholding)."
+    },
+    {
+      "business_type": "Daycare",
+      "requirement_name": "Federal Labor Standards (FLSA)",
+      "authority": "U.S. Federal (Dept. of Labor)",
+      "description": "Daycare businesses must adhere to federal labor laws under the FLSA: pay at least the federal minimum wage ($7.25) and overtime for hourly employees, though California’s requirements are higher. If the daycare hires minor employees (unlikely in childcare roles), it must follow federal child labor rules.",
+      "link": "https://www.dol.gov/agencies/whd/youthrules",
+      "notes": "Most daycare workers will be adults, and state wage laws will govern in practice (since California’s minimum wage exceeds the federal minimum). But compliance with federal law is baseline. Notably, the FLSA has an overtime exemption for certain residential childcare workers in nonprofit institutions, but a regular for-profit daycare must pay overtime. Additionally, under federal law, live-in employees (if any) have different overtime rules. Daycares should also post the federal \"Employee Rights\" poster. In general, by following California labor laws, the daycare will meet FLSA standards."
+    },
+    {
+      "business_type": "Daycare",
+      "requirement_name": "OSHA/Workplace Safety",
+      "authority": "U.S. Federal and State (OSHA/CalOSHA)",
+      "description": "Daycares must provide a safe environment for employees. While the primary safety concerns are child safety, employee safety matters are covered by Cal/OSHA regulations (e.g., preventing ergonomic injuries when lifting children, maintaining a hazard-free facility). There is no special OSHA license, but compliance with general OSHA duties is required&#8203;:contentReference[oaicite:40]{index=40}.",
+      "link": "https://www.osha.gov/workplace-safety",
+      "notes": "The daycare should have safety plans for staff – an Injury and Illness Prevention Program, and possibly training on topics like CPR (which benefits both children and staff safety), safe use of cleaning supplies (with proper labeling and storage), and emergency evacuation procedures. Because daycares have responsibilities to the children, many safety measures (like earthquake drills, first aid kits, etc.) also serve to protect employees. Cal/OSHA could inspect if there are complaints, but routine inspections are uncommon in this low-hazard industry. Still, the daycare must comply with OSHA standards (for example, recordkeeping if it has >10 employees, and reporting any serious employee injuries)."
+    }
+  ],
+  "salons": [
+    {
+      "business_type": "Salon",
+      "requirement_name": "City Business License",
+      "authority": "City of Berkeley (Finance Department)",
+      "description": "All salons (hair, beauty, nail salons, etc.) in Berkeley are required to obtain a city business license before operating, and renew it annually, just like any other business&#8203;:contentReference[oaicite:41]{index=41}.",
+      "link": "https://berkeleyca.gov/doing-business/operating-berkeley/business-licenses/new-business-licenses",
+      "notes": "The license (business tax certificate) application should list the salon’s business address and ownership. Once issued, the salon must pay the annual business license tax. Operating without a Berkeley business license can result in penalties. Home-based salon businesses (if allowed) would also need a business license."
+    },
+    {
+      "business_type": "Salon",
+      "requirement_name": "Zoning Approval",
+      "authority": "City of Berkeley (Planning Department)",
+      "description": "Salons must be located in a zone that permits personal services. In Berkeley’s commercial districts, salons are generally allowed, but a Zoning Certificate or permit is required to verify the use. If a salon is home-based (e.g., a one-chair salon in a residence), it must comply with the Home Occupation regulations and may need a permit.",
+      "link": "https://berkeley.municipal.codes/BMC/23.302.040",
+      "notes": "For a storefront salon, typically an over-the-counter Zoning Certificate is obtained when applying for the business license, confirming that a hair/beauty salon is a permitted use at that address. Berkeley’s Home Occupation rules restrict on-site clients; a home-based salon is generally limited (appointment-only, one customer at a time, etc.) and might need an Administrative Use Permit if even allowed. Always check with the Planning Department. If any tenant improvements are made (plumbing for shampoo stations, etc.), building permits would be required as well, but those are separate from zoning use approval."
+    },
+    {
+      "business_type": "Salon",
+      "requirement_name": "Sign Permit",
+      "authority": "City of Berkeley (Planning Department)",
+      "description": "A salon installing a new outdoor sign must obtain a sign permit and design review approval from the City. This ensures the signage meets Berkeley’s size and aesthetic regulations.",
+      "link": "https://berkeleyca.gov/construction-development/permits-design-parameters/design-review",
+      "notes": "Most salons have a window sign or blade sign to attract customers. Prior to putting up any signage (illuminated shop signs, sidewalk sandwich boards, etc.), the salon owner should get the necessary permit. In commercial districts, design review for signage might be relatively streamlined but is still required. Existing sign replacements with the same dimensions may also require a permit to change the business name. Fines can be imposed for unpermitted signs."
+    },
+    {
+      "business_type": "Salon",
+      "requirement_name": "Berkeley Minimum Wage & Paid Sick Leave",
+      "authority": "City of Berkeley (Labor Standards Ordinances)",
+      "description": "Salon owners must pay any employees at least Berkeley’s minimum wage ($18.67 as of 2024)&#8203;:contentReference[oaicite:42]{index=42} and provide sick leave as mandated by local law. This includes stylists or assistants who are direct employees. (If stylists are independent contractors renting chairs, they are not employees, but most support staff would be employees.)",
+      "link": "https://berkeley.municipal.codes/BMC/13.99",
+      "notes": "Many salons operate by renting chairs to licensed cosmetologists (who then are independent business operators). However, receptionists, hair washers, or junior stylists might be on payroll, and for them the salon must follow Berkeley’s labor ordinances. Even independent contractors should be ensured to have proper licensing (and note that misclassification of employees as contractors is illegal). For any actual employees, full compliance with minimum wage, paid sick leave, and other city labor rules is required, as with any Berkeley business."
+    },
+    {
+      "business_type": "Salon",
+      "requirement_name": "State Cosmetology Establishment License",
+      "authority": "State of California (Board of Barbering and Cosmetology)",
+      "description": "The salon (as a physical establishment) must be licensed by the California Board of Barbering and Cosmetology. An Establishment License is required to operate any barbering or cosmetology shop&#8203;:contentReference[oaicite:43]{index=43}. This license is tied to the salon’s location and ownership.",
+      "link": "https://www.barbercosmo.ca.gov/forms_pubs/index.shtml",
+      "notes": "The salon owner must submit an Establishment License Application to the Board (and pay the fee). The Board will issue the license, which must be renewed (typically every 2 years). If ownership or location changes, a new license is required&#8203;:contentReference[oaicite:44]{index=44}. The salon cannot legally open for services until this license is approved. Once operating, state board inspectors may visit unannounced to ensure the establishment follows all health and safety regulations (cleanliness, tool disinfection, posting of licenses, etc.)."
+    },
+    {
+      "business_type": "Salon",
+      "requirement_name": "Individual Practitioner Licenses",
+      "authority": "State of California (Board of Barbering and Cosmetology)",
+      "description": "Every cosmetologist, barber, manicurist, esthetician, or other beauty practitioner working in the salon must hold a valid California license for their specialty. It is illegal to perform cosmetology services without an active license, even under a licensed establishment.",
+      "link": "https://www.barbercosmo.ca.gov/",
+      "notes": "Salon owners should verify that all stylists and technicians have current licenses displayed at their work stations&#8203;:contentReference[oaicite:45]{index=45}. This includes barber licenses for barbers, cosmetology licenses for hairdressers, manicurist licenses for nail techs, etc. If the salon hires an apprentice, that apprentice must have a valid apprentice license and work under supervision. The Board can cite the establishment if an unlicensed person is caught working&#8203;:contentReference[oaicite:46]{index=46}. Practitioners also need to complete continuing education if required (currently, CA requires a one-time training in specific topics rather than ongoing CEUs)."
+    },
+    {
+      "business_type": "Salon",
+      "requirement_name": "Health and Safety Regulations (Board of Cosmetology)",
+      "authority": "State of California (Barbering and Cosmetology Regulations)",
+      "description": "While not a separate permit, salons must continuously comply with state sanitary and health standards. This includes posting the Health and Safety Rules (from the Board) in the salon, disinfecting tools, using personal protective equipment as needed (e.g., gloves for certain chemical services), and proper ventilation for products.",
+      "link": "https://www.barbercosmo.ca.gov/laws_regulations/",
+      "notes": "Board inspectors will check for things like: clean restrooms, labeled containers for all cosmetics and toxic substances, no reuse of single-use items, proper storage of clean vs. dirty implements, and that the “Consumer Information” notice is conspicuously posted (which includes info on how to file complaints). Salons offering nail services should adhere to ventilation requirements for acrylics (per state guidelines) and dispose of hazardous waste (like excess acrylic liquid) according to regulations. Compliance with these rules is part of maintaining the establishment license in good standing."
+    },
+    {
+      "business_type": "Salon",
+      "requirement_name": "Seller’s Permit (if selling retail products)",
+      "authority": "State of California (Dept. of Tax and Fee Administration)",
+      "description": "If the salon sells tangible products (shampoos, cosmetics, hair tools, etc.) to customers, a Seller’s Permit is required to collect sales tax. Many salons do retail product sales as a secondary income, which makes this permit necessary&#8203;:contentReference[oaicite:47]{index=47}.",
+      "link": "https://www.cdtfa.ca.gov/taxes-and-fees/faqseller.htm",
+      "notes": "The process is the same as for any retailer: register with CDTFA for a seller’s permit. If the salon strictly provides services and does not sell any take-home products, a seller’s permit may not be needed. However, most salons do at least some retail. Once registered, the salon must report sales and pay sales tax to the state (usually quarterly)."
+    },
+    {
+      "business_type": "Salon",
+      "requirement_name": "California Employer Registration (if staff hired)",
+      "authority": "State of California (Employment Development Dept.)",
+      "description": "For salons with employees (receptionists, assistants, or even stylists on payroll), the owner must register as an employer with EDD within 15 days of hiring&#8203;:contentReference[oaicite:48]{index=48}, and fulfill all payroll tax obligations (state unemployment insurance, disability insurance, etc.).",
+      "link": "https://edd.ca.gov/en/Payroll_Taxes/Registration_and_eServices/",
+      "notes": "Many salons operate chair-rental models (each stylist is an independent business), in which case the salon might not have traditional employees beyond maybe a front-desk person. But if there are employees, the salon needs to have workers’ comp insurance (mandatory) and follow wage/hour laws. Registration with EDD will entail obtaining a state employer account number and submitting DE-9/DE-9C forms quarterly. Even if the only employee is the owner (as an S-Corp officer, for example), payroll registration is needed for that scenario as well."
+    },
+    {
+      "business_type": "Salon",
+      "requirement_name": "Workers’ Compensation Insurance",
+      "authority": "State of California (Labor Code §3700)",
+      "description": "If the salon has any employees (including part-time assistants), it must secure workers’ compensation insurance coverage for those employees&#8203;:contentReference[oaicite:49]{index=49}. Proof of coverage may be required by the city when obtaining the business license.",
+      "link": "https://www.dir.ca.gov/dwc/employer.htm",
+      "notes": "Salon work can involve some risk (e.g., slip-and-fall, carpal tunnel injuries, or exposure to chemicals), so having workers’ comp not only is legally required but protects the business from personal injury lawsuits by employees (workers’ comp becomes the exclusive remedy). Chair renters (independent contractors) are not employees, but be cautious: if they are misclassified and legally seen as employees, the salon would be liable to cover them. The safe approach is to have a policy if any staff are working. State law imposes fines and can even stop a business if workers’ comp is lacking."
+    },
+    {
+      "business_type": "Salon",
+      "requirement_name": "Cal/OSHA Compliance",
+      "authority": "State of California (Cal/OSHA)",
+      "description": "Salons must maintain a safe working environment according to Cal/OSHA standards. This includes proper ventilation (especially for nail salons using chemicals), ergonomics (chairs and equipment that reduce strain), and generally an Injury and Illness Prevention Program for the workplace. There is no specific Cal/OSHA permit, but compliance is mandatory.",
+      "link": "https://www.dir.ca.gov/dosh/dosh_publications/osha_userguide.pdf",
+      "notes": "Cal/OSHA might require salons (particularly nail salons) to have ventilation systems per building code requirements to control exposure to chemical fumes. Employees should be trained on handling products (like hair dyes, keratin treatments that may contain formaldehyde – OSHA has guidelines for those). The salon should also keep Material Safety Data Sheets (MSDS/SDS) for all chemicals on site and make them available to employees. While enforcement may be complaint-driven, any salon with employees should implement an IIPP (Injury & Illness Prevention Program) and comply with Cal/OSHA posting and reporting rules to avoid penalties."
+    },
+    {
+      "business_type": "Salon",
+      "requirement_name": "IRS EIN (Tax ID)",
+      "authority": "U.S. Federal (IRS)",
+      "description": "The salon business should obtain an IRS Employer Identification Number for tax purposes. This is needed if the salon has any employees or if it’s formed as a corporation or partnership. It’s commonly used on business bank accounts and tax filings&#8203;:contentReference[oaicite:50]{index=50}.",
+      "link": "https://www.irs.gov/businesses/small-businesses-self-employed/employer-id-numbers",
+      "notes": "Salons that operate as sole proprietorships without employees might not strictly need an EIN (they could use the owner’s SSN for tax filings), but obtaining one is recommended to separate personal and business finances. If the salon is an LLC or corporation, an EIN is required. The EIN will be used when the salon files its income taxes (or passes through for the owner’s 1040 Schedule C) and if it has payroll. It's also often needed to register for other accounts like a Seller’s Permit or to open a business bank account."
+    },
+    {
+      "business_type": "Salon",
+      "requirement_name": "Federal Labor Laws (FLSA)",
+      "authority": "U.S. Federal (Dept. of Labor)",
+      "description": "If the salon has employees, it must abide by federal wage and hour laws (FLSA). This means paying at least the federal minimum wage ($7.25) and overtime for hours over 40 in a week&#8203;:contentReference[oaicite:51]{index=51}. (California’s wage laws are more stringent, so in practice those will be followed.) The salon must also adhere to federal laws against discrimination (EEO) and other DOL regulations like keeping payroll records.",
+      "link": "https://www.dol.gov/general/topic/wages",
+      "notes": "Because salons often have few employees, federal laws like Title VII (which applies if 15+ employees) might not kick in; however, California’s own anti-discrimination laws apply even at smaller employer sizes. As for wage laws, virtually all employees in a salon (e.g., a receptionist) are non-exempt and thus due overtime pay if they ever exceed 40 hours. Many salons avoid overtime by keeping staff on 8-hour shifts. The salon should also display the mandatory federal labor law posters (e.g., the Fair Labor Standards Act poster). Federal law also has tip credit rules, but California doesn’t allow tip credit against wages, so the salon must pay full minimum wage regardless of tips."
+    },
+    {
+      "business_type": "Salon",
+      "requirement_name": "OSHA/Workplace Safety (Federal)",
+      "authority": "U.S. Federal (OSHA)",
+      "description": "Similar to other businesses, salons are subject to federal OSHA’s general duty to keep the workplace free from hazards. Issues like chemical exposure from salon products fall under OSHA standards. In California, Cal/OSHA enforces these, but the underlying requirement is federal. There’s no separate federal permit, just ongoing compliance.",
+      "link": "https://www.osha.gov/beauty-salons",
+      "notes": "OSHA has guidance specifically for hair and nail salons on ventilation and chemical safety. For example, certain hair smoothing treatments can release formaldehyde – OSHA has regulations for formaldehyde exposure that salons must follow (like training, air monitoring, possibly medical surveillance if exposure is above limits). Nail salons also should be aware of OSHA’s air quality and personal protective equipment recommendations. Keeping the salon well-ventilated, providing gloves or masks as needed, and training staff on the hazards of products (perhaps using the product SDSs) are part of compliance. Federal OSHA can inspect, but typically Cal/OSHA would be the inspecting body in Berkeley. Compliance with one equates to compliance with the other."
+    }
+  ]
+}

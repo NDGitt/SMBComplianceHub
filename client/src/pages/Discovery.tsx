@@ -13,6 +13,7 @@ import StepIndicator from "@/components/discovery/StepIndicator";
 import { useQuery } from "@tanstack/react-query";
 import { fetchBusinessTypes, fetchLocationsByState } from "@/lib/data";
 import { Loader2 } from "lucide-react";
+import type { BusinessType, Location } from "@shared/schema";
 
 const Discovery = () => {
   const [, setLocation] = useLocation();
@@ -27,7 +28,7 @@ const Discovery = () => {
     data: businessTypes,
     isLoading: isLoadingBusinessTypes,
     error: businessTypesError,
-  } = useQuery({
+  } = useQuery<BusinessType[]>({
     queryKey: ["/api/business-types"],
     staleTime: Infinity,
   });
@@ -37,7 +38,7 @@ const Discovery = () => {
     data: locations,
     isLoading: isLoadingLocations,
     error: locationsError,
-  } = useQuery({
+  } = useQuery<Location[]>({
     queryKey: [`/api/locations/${stateCode}`],
     enabled: stateCode !== "",
     staleTime: Infinity,
@@ -72,8 +73,11 @@ const Discovery = () => {
     <section className="py-12 bg-white">
       <div className="container mx-auto px-4">
         <h2 className="text-2xl md:text-3xl font-bold text-center mb-8">
-          Business Compliance Discovery
+          Berkeley Business Compliance Discovery
         </h2>
+        <p className="text-gray-600 text-center mb-8 max-w-3xl mx-auto">
+          Find all the compliance requirements for your business in Berkeley, California
+        </p>
 
         <StepIndicator currentStep={currentStep} totalSteps={3} />
 
@@ -107,7 +111,7 @@ const Discovery = () => {
                     <SelectValue placeholder="Select your business type" />
                   </SelectTrigger>
                   <SelectContent>
-                    {businessTypes?.map((type) => (
+                    {businessTypes?.map((type: BusinessType) => (
                       <SelectItem key={type.id} value={type.id.toString()}>
                         {type.name}
                       </SelectItem>
@@ -141,12 +145,11 @@ const Discovery = () => {
               <label htmlFor="state" className="block text-gray-700 mb-2">
                 State
               </label>
-              <Select value={stateCode} onValueChange={handleStateChange}>
+              <Select value={stateCode} onValueChange={handleStateChange} defaultValue="ca">
                 <SelectTrigger>
                   <SelectValue placeholder="Select state" />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="ri">Rhode Island</SelectItem>
                   <SelectItem value="ca">California</SelectItem>
                 </SelectContent>
               </Select>
@@ -170,7 +173,7 @@ const Discovery = () => {
                       <SelectValue placeholder="Select city" />
                     </SelectTrigger>
                     <SelectContent>
-                      {locations?.map((location) => (
+                      {locations?.map((location: Location) => (
                         <SelectItem key={location.id} value={location.id.toString()}>
                           {location.city}
                         </SelectItem>
