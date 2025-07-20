@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useSearch } from "wouter";
+import { useSearch, Link } from "wouter";
 import { useQuery } from "@tanstack/react-query";
 import { fetchRequirementsWithProviders, fetchBusinessTypes, fetchLocationsByState } from "@/lib/data";
 import { Checkbox } from "@/components/ui/checkbox";
@@ -141,9 +141,9 @@ const Results = () => {
           <p className="mb-4">
             Please complete the discovery process to see your compliance requirements.
           </p>
-          <Button onClick={() => window.location.href = "/discovery"}>
-            Go to Discovery
-          </Button>
+          <Link href="/discovery">
+            <Button>Go to Discovery</Button>
+          </Link>
         </div>
       </div>
     );
@@ -305,10 +305,8 @@ const Results = () => {
                 )}
 
                 <div className="mt-8 text-center">
-                  <Button
-                    className="inline-flex items-center"
-                    onClick={() => window.location.href = "/providers"}
-                  >
+                                  <Link href="/providers">
+                  <Button className="inline-flex items-center">
                     <span>Browse All Service Providers</span>
                     <svg
                       className="h-4 w-4 ml-2"
@@ -323,6 +321,7 @@ const Results = () => {
                       />
                     </svg>
                   </Button>
+                </Link>
                 </div>
               </div>
             </div>
