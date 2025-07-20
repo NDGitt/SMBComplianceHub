@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useSearch } from "wouter";
 import { useQuery } from "@tanstack/react-query";
-import { fetchRequirementsWithProviders } from "@/lib/data";
+import { fetchRequirementsWithProviders, fetchBusinessTypes, fetchLocationsByState } from "@/lib/data";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
@@ -28,10 +28,24 @@ const Results = () => {
     isLoading,
     error,
   } = useQuery({
-    queryKey: [
-      `/api/requirements-with-providers?businessTypeId=${businessTypeId}&locationId=${locationId}`,
-    ],
+    queryKey: ["requirements-with-providers", businessTypeId, locationId],
+    queryFn: () => fetchRequirementsWithProviders(
+      parseInt(businessTypeId || "0"), 
+      parseInt(locationId || "0")
+    ),
     enabled: !!businessTypeId && !!locationId,
+  });
+
+  // Fetch business types for display
+  const { data: businessTypes } = useQuery({
+    queryKey: ["business-types"],
+    queryFn: fetchBusinessTypes,
+  });
+
+  // Fetch locations for display  
+  const { data: locations } = useQuery({
+    queryKey: ["locations", "ca"],
+    queryFn: () => fetchLocationsByState("ca"),
   });
 
   // Get all unique categories and urgencies for filtering
@@ -52,43 +66,26 @@ const Results = () => {
       setSelectedCategories(allCategories);
       setSelectedUrgencies(allUrgencies);
       
-      // Fetch business type and location details from API or use parameters
-      const fetchBusinessAndLocationDetails = async () => {
-        try {
-          // Fetch business type details
-          const businessTypeResponse = await fetch(`/api/business-types`);
-          const businessTypes = await businessTypeResponse.json();
-          const businessType = businessTypes.find(
-            (bt: any) => bt.id.toString() === businessTypeId
-          );
-          
-          // Fetch location details
-          const locationResponse = await fetch(`/api/locations/ca`);
-          const locations = await locationResponse.json();
-          const location = locations.find(
-            (loc: any) => loc.id.toString() === locationId
-          );
-          
-          if (businessType) {
-            setDisplayedBusinessType(businessType.name);
-          }
-          
-          if (location) {
-            setDisplayedLocation(`${location.city}, ${location.state}`);
-          } else {
-            setDisplayedLocation("Berkeley, California");
-          }
-        } catch (error) {
-          console.error("Error fetching details:", error);
-          // Fallback to Berkeley, California
-          setDisplayedBusinessType("Restaurant");
-          setDisplayedLocation("Berkeley, California");
-        }
-      };
+      // Set business type and location details using fetched data
+      const businessType = businessTypes?.find(
+        (bt: any) => bt.id.toString() === businessTypeId
+      );
       
-      fetchBusinessAndLocationDetails();
+      const location = locations?.find(
+        (loc: any) => loc.id.toString() === locationId
+      );
+      
+      if (businessType) {
+        setDisplayedBusinessType(businessType.name);
+      }
+      
+      if (location) {
+        setDisplayedLocation(`${location.city}, ${location.state}`);
+      } else {
+        setDisplayedLocation("Berkeley, California");
+      }
     }
-  }, [requirementsByCategory, businessTypeId, locationId]);
+  }, [requirementsByCategory, businessTypes, locations, businessTypeId, locationId]);
 
   // Filter requirements based on search term, selected categories, and urgencies
   const filteredRequirements = requirementsByCategory

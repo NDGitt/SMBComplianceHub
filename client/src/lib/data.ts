@@ -14,6 +14,29 @@ import {
   mockProvidersWithDetails 
 } from "./mockData";
 
+// Debug function to test mock data (available in console)
+if (typeof window !== 'undefined') {
+  (window as any).debugMockData = () => {
+    console.log('🧪 Mock Data Debug:', {
+      businessTypes: mockBusinessTypes,
+      locations: mockLocations,
+      categories: mockRequirementCategories,
+      providers: mockProvidersWithDetails,
+      isStatic: isStaticEnvironment(),
+      hostname: window.location.hostname
+    });
+  };
+  
+  // Also expose the environment check function
+  (window as any).checkEnvironment = () => {
+    console.log('🌍 Environment Check:', {
+      hostname: window.location.hostname,
+      isStatic: isStaticEnvironment(),
+      userAgent: navigator.userAgent
+    });
+  };
+}
+
 // Type for requirements grouped by category
 export interface RequirementsByCategory {
   category: RequirementCategory;
@@ -29,32 +52,64 @@ export interface ProviderWithCategory extends ServiceProvider {
 
 // Helper function to check if we're in a static environment (GitHub Pages)
 const isStaticEnvironment = () => {
-  return typeof window !== 'undefined' && window.location.hostname.includes('github.io');
+  if (typeof window === 'undefined') return false;
+  
+  const hostname = window.location.hostname;
+  const isLocalhost = hostname === 'localhost' || hostname === '127.0.0.1';
+  const isGitHubPages = hostname.includes('github.io');
+  
+  console.log('🔍 Environment detection:', { hostname, isLocalhost, isGitHubPages });
+  
+  // Use mock data for GitHub Pages or any non-localhost environment
+  return isGitHubPages || !isLocalhost;
 };
 
 // API functions for fetching data
 export async function fetchBusinessTypes(): Promise<BusinessType[]> {
-  if (isStaticEnvironment()) {
-    return mockBusinessTypes;
+  const isStatic = isStaticEnvironment();
+  console.log('🔍 fetchBusinessTypes - Environment check:', { 
+    hostname: typeof window !== 'undefined' ? window.location.hostname : 'server',
+    isStatic,
+    mockDataLength: mockBusinessTypes.length
+  });
+  
+  // Force mock data for non-localhost environments
+  if (isStatic) {
+    console.log('✅ Using mock data for business types:', mockBusinessTypes);
+    return new Promise(resolve => {
+      setTimeout(() => resolve(mockBusinessTypes), 100); // Small delay to simulate API
+    });
   }
   
-  const response = await fetch('/api/business-types');
-  if (!response.ok) {
-    throw new Error('Failed to fetch business types');
+  console.log('🌐 Trying to fetch from API...');
+  try {
+    const response = await fetch('/api/business-types');
+    if (!response.ok) {
+      throw new Error('Failed to fetch business types');
+    }
+    return response.json();
+  } catch (error) {
+    console.error('❌ API failed, falling back to mock data:', error);
+    return mockBusinessTypes;
   }
-  return response.json();
 }
 
 export async function fetchLocationsByState(stateCode: string): Promise<Location[]> {
   if (isStaticEnvironment()) {
-    return mockLocations;
+    console.log('Using mock data for locations');
+    return Promise.resolve(mockLocations);
   }
   
-  const response = await fetch(`/api/locations/${stateCode}`);
-  if (!response.ok) {
-    throw new Error('Failed to fetch locations');
+  try {
+    const response = await fetch(`/api/locations/${stateCode}`);
+    if (!response.ok) {
+      throw new Error('Failed to fetch locations');
+    }
+    return response.json();
+  } catch (error) {
+    console.error('API failed, falling back to mock locations:', error);
+    return mockLocations;
   }
-  return response.json();
 }
 
 export async function fetchRequirementCategories(): Promise<RequirementCategory[]> {
@@ -99,15 +154,32 @@ export async function fetchProviders(): Promise<ServiceProvider[]> {
 }
 
 export async function fetchProvidersWithDetails(): Promise<ProviderWithCategory[]> {
-  if (isStaticEnvironment()) {
-    return mockProvidersWithDetails;
+  const isStatic = isStaticEnvironment();
+  console.log('🔍 fetchProvidersWithDetails - Environment check:', { 
+    hostname: typeof window !== 'undefined' ? window.location.hostname : 'server',
+    isStatic,
+    mockProvidersLength: mockProvidersWithDetails.length
+  });
+  
+  // Force mock data for non-localhost environments
+  if (isStatic) {
+    console.log('✅ Using mock data for providers with details:', mockProvidersWithDetails);
+    return new Promise(resolve => {
+      setTimeout(() => resolve(mockProvidersWithDetails), 150); // Small delay to simulate API
+    });
   }
   
-  const response = await fetch('/api/providers-with-details');
-  if (!response.ok) {
-    throw new Error('Failed to fetch providers with details');
+  console.log('🌐 Trying to fetch providers from API...');
+  try {
+    const response = await fetch('/api/providers-with-details');
+    if (!response.ok) {
+      throw new Error('Failed to fetch providers with details');
+    }
+    return response.json();
+  } catch (error) {
+    console.error('❌ Providers API failed, falling back to mock data:', error);
+    return mockProvidersWithDetails;
   }
-  return response.json();
 }
 
 export async function fetchProvidersByRequirement(requirementId: number): Promise<ServiceProvider[]> {

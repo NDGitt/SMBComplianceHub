@@ -29,7 +29,8 @@ const Discovery = () => {
     isLoading: isLoadingBusinessTypes,
     error: businessTypesError,
   } = useQuery<BusinessType[]>({
-    queryKey: ["/api/business-types"],
+    queryKey: ["business-types"],
+    queryFn: fetchBusinessTypes,
     staleTime: Infinity,
   });
 
@@ -39,7 +40,8 @@ const Discovery = () => {
     isLoading: isLoadingLocations,
     error: locationsError,
   } = useQuery<Location[]>({
-    queryKey: [`/api/locations/${stateCode}`],
+    queryKey: ["locations", stateCode],
+    queryFn: () => fetchLocationsByState(stateCode),
     enabled: stateCode !== "",
     staleTime: Infinity,
   });

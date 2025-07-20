@@ -32,7 +32,8 @@ const Providers = () => {
     isLoading: isLoadingProviders,
     error: providersError,
   } = useQuery<ProviderWithCategory[]>({
-    queryKey: ["/api/providers-with-details"],
+    queryKey: ["providers-with-details"],
+    queryFn: fetchProvidersWithDetails,
   });
   
   // Fetch categories for filtering
@@ -40,7 +41,8 @@ const Providers = () => {
     data: categories,
     isLoading: isLoadingCategories,
   } = useQuery<RequirementCategory[]>({
-    queryKey: ["/api/requirement-categories"],
+    queryKey: ["requirement-categories"],
+    queryFn: fetchRequirementCategories,
   });
   
   // Set initial state for filters when data is loaded
