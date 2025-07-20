@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useSearch, Link } from "wouter";
+import { useSearch } from "wouter";
 import { useQuery } from "@tanstack/react-query";
 import { fetchRequirementsWithProviders, fetchBusinessTypes, fetchLocationsByState } from "@/lib/data";
 import { Checkbox } from "@/components/ui/checkbox";
@@ -9,6 +9,25 @@ import { Label } from "@/components/ui/label";
 import { Loader2, AlertCircle } from "lucide-react";
 import RequirementCard from "@/components/requirements/RequirementCard";
 import { RequirementsByCategory } from "@/lib/data";
+
+// Get base path for GitHub Pages (should match App.tsx)
+const getBasePath = () => {
+  if (typeof window !== 'undefined') {
+    const hostname = window.location.hostname;
+    if (hostname.includes('github.io')) {
+      return '/SMBComplianceHub';
+    }
+  }
+  return '';
+};
+
+// Navigation function that handles base path
+const navigateWithBasePath = (path: string) => {
+  const basePath = getBasePath();
+  const fullPath = basePath + path;
+  window.history.pushState({}, '', fullPath);
+  window.dispatchEvent(new PopStateEvent('popstate'));
+};
 
 const Results = () => {
   const search = useSearch();
@@ -141,9 +160,9 @@ const Results = () => {
           <p className="mb-4">
             Please complete the discovery process to see your compliance requirements.
           </p>
-          <Link href="/discovery">
-            <Button>Go to Discovery</Button>
-          </Link>
+          <Button onClick={() => navigateWithBasePath("/discovery")}>
+            Go to Discovery
+          </Button>
         </div>
       </div>
     );
@@ -305,23 +324,24 @@ const Results = () => {
                 )}
 
                 <div className="mt-8 text-center">
-                                  <Link href="/providers">
-                  <Button className="inline-flex items-center">
-                    <span>Browse All Service Providers</span>
-                    <svg
-                      className="h-4 w-4 ml-2"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z"
-                        clipRule="evenodd"
-                      />
-                    </svg>
-                  </Button>
-                </Link>
+                                  <Button 
+                  className="inline-flex items-center"
+                  onClick={() => navigateWithBasePath("/providers")}
+                >
+                  <span>Browse All Service Providers</span>
+                  <svg
+                    className="h-4 w-4 ml-2"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                </Button>
                 </div>
               </div>
             </div>

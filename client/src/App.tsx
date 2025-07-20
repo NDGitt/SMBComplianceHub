@@ -1,4 +1,4 @@
-import { Switch, Route, Router } from "wouter";
+import { Switch, Route, Router, useLocation } from "wouter";
 import { queryClient } from "./lib/queryClient";
 import { QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
@@ -23,22 +23,33 @@ const getBasePath = () => {
   return '';
 };
 
-function AppRouter() {
+// Custom hook to handle base path routing
+const useBasePathLocation = () => {
   const basePath = getBasePath();
+  const [location] = useLocation();
+  
+  // Remove base path from location for internal routing
+  const internalLocation = basePath && location.startsWith(basePath) 
+    ? location.slice(basePath.length) || '/'
+    : location;
+    
+  return internalLocation;
+};
+
+function AppRouter() {
+  const location = useBasePathLocation();
 
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
       <main className="flex-grow">
-        <Router base={basePath}>
-          <Switch>
-            <Route path="/" component={Home} />
-            <Route path="/discovery" component={Discovery} />
-            <Route path="/results" component={Results} />
-            <Route path="/providers" component={Providers} />
-            <Route component={NotFound} />
-          </Switch>
-        </Router>
+        <Switch location={location}>
+          <Route path="/" component={Home} />
+          <Route path="/discovery" component={Discovery} />
+          <Route path="/results" component={Results} />
+          <Route path="/providers" component={Providers} />
+          <Route component={NotFound} />
+        </Switch>
       </main>
       <Footer />
     </div>
