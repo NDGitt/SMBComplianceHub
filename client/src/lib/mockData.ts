@@ -13,10 +13,10 @@ export const mockBusinessTypes: BusinessType[] = [
 // Mock locations data
 export const mockLocations: Location[] = [
   { id: 1, city: "Berkeley", state: "California", stateCode: "CA", citySlug: "berkeley" },
-  { id: 2, city: "Oakland", state: "California", stateCode: "CA", citySlug: "oakland" },
-  { id: 3, city: "San Francisco", state: "California", stateCode: "CA", citySlug: "san-francisco" },
-  { id: 4, city: "San Jose", state: "California", stateCode: "CA", citySlug: "san-jose" },
-  { id: 5, city: "Sacramento", state: "California", stateCode: "CA", citySlug: "sacramento" },
+  // { id: 2, city: "Oakland", state: "California", stateCode: "CA", citySlug: "oakland" },
+  // { id: 3, city: "San Francisco", state: "California", stateCode: "CA", citySlug: "san-francisco" },
+  // { id: 4, city: "San Jose", state: "California", stateCode: "CA", citySlug: "san-jose" },
+  // { id: 5, city: "Sacramento", state: "California", stateCode: "CA", citySlug: "sacramento" },
 ];
 
 // Mock requirement categories
